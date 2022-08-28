@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimelyGig</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Mulish:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- <div>
+        <div class="logo-img-container">
+          <img src="./images/image4.png" class="logo-image" />
+          <h6>timelygig</h6>
+        </div>
+        <div></div>
+      </div> -->
+      <div class="hero-img_container pt-4 mb-5 gn-padding">
+        <nav class="d-none d-sm-flex mb-5 tg-navbar">
+          <div class="container-fluid d-flex justify-content-between">
+            <img src="./images/logo.svg" class="logo-image" />
+
+            <div class="d-flex align-items-center gap-5">
+              <ul class="me-auto mb-2 mb-lg-0 d-flex gap-5 list-inline">
+                <li class="">
+                  <a
+                    class="text-decoration-none text-white active"
+                    aria-current="page"
+                    href="#"
+                    >Home
+                  </a>
+                </li>
+                <li class="">
+                  <a class="text-decoration-none text-white" href="#"
+                    >Search Job</a
+                  >
+                </li>
+                <li class="">
+                  <a class="text-decoration-none text-white" href="#"
+                    >Search Employer</a
+                  >
+                </li>
+              </ul>
+
+              <button class="bg-white btn px-4 py-2 rounded-pill" type="submit">
+                Login/Register
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="d-sm-flex header-section-main-container">
+          <div class="header-section-first-main-container">
+            <span class="h4 fw-light">The Easiest way</span>
+            <span class="fw-lighter small">To Get Your</span>
+            <div class="h1">Dream Job</div>
+            <div class="mb-4 small">
+              It is a long established fact that a reader will be distracted
+              <br />
+              by the readable content of a page when looking at its layout.
+            </div>
+            <form class="search-job-main-container shadow-lg">
+              <div class="search-job">Search Job</div>
+              <div class="search-job-container">
+                <div class="icon-input">
+                  <img src="./images/portfolio.png" alt="" class="job-icon" />
+
+                  <input type="text" placeholder="e.g job name" class="input" />
+                </div>
+                <div class="icon-input">
+                  <img
+                    src="./images/category.png"
+                    alt=""
+                    class="category-icon"
+                  />
+                  <input type="dropdown" placeholder="category" class="input" />
+                  <img
+                    src="./images/dropdown.png"
+                    alt=""
+                    class="dropdown-icon"
+                  />
+                </div>
+                <div class="icon-input">
+                  <img
+                    src="./images/location.png"
+                    alt=""
+                    class="location-icon"
+                  />
+                  <input type="dropdown" placeholder="location" class="input" />
+                  <img
+                    src="./images/dropdown.png"
+                    alt=""
+                    class="dropdown-icon"
+                  />
+                </div>
+
+                <button type="submit" class="search-button">Search</button>
+              </div>
+            </form>
+          </div>
+          <div class="header-section-second-container">
+            <img src="./images/image3.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-sm-flex align-items-center bg-white gap-4 explore-role-main-container gn-padding"
+      >
+        <div class="explore-role-container h2">
+          Explore roles you are <br />
+          interested in
+        </div>
+        <div class="rec-info-main-container row">
+          <div
+            class="col-sm-4 mb-4 d-flex align-items-start justify-content-center"
+          >
+            <div
+              class="arrow-head-rec-info px-3 d-flex justify-content-center align-items-center bg-white shadow rounded-pill"
+            >
+              <img src="./images/arrow.svg" class="arrow-head me-2" />
+              <div class="rec-info">Science and Environment</div>
+            </div>
+          </div>
+          <div
+            class="col-sm-4 mb-4 d-flex align-items-start justify-content-center"
+          >
+            <div
+              class="arrow-head-rec-info px-3 d-flex justify-content-center align-items-center bg-white shadow rounded-pill"
+            >
+              <img src="./images/arrow.svg" class="arrow-head me-2" />
+              <div class="rec-info">Science and Environment</div>
+            </div>
+          </div>
+          <div
+            class="col-sm-4 mb-4 d-flex align-items-start justify-content-center"
+          >
+            <div
+              class="arrow-head-rec-info px-3 d-flex justify-content-center align-items-center bg-white shadow rounded-pill"
+            >
+              <img src="./images/arrow.svg" class="arrow-head me-2" />
+              <div class="rec-info">Science and Environment</div>
+            </div>
+          </div>
+          <div
+            class="col-sm-4 mb-4 d-flex align-items-start justify-content-center"
+          >
+            <div
+              class="arrow-head-rec-info px-3 d-flex justify-content-center align-items-center bg-white shadow rounded-pill"
+            >
+              <img src="./images/arrow.svg" class="arrow-head me-2" />
+              <div class="rec-info">Science and Environment</div>
+            </div>
+          </div>
+          <div
+            class="col-sm-4 mb-4 d-flex align-items-start justify-content-center"
+          >
+            <div
+              class="arrow-head-rec-info px-3 d-flex justify-content-center align-items-center bg-white shadow rounded-pill"
+            >
+              <img src="./images/arrow.svg" class="arrow-head me-2" />
+              <div class="rec-info">Science and Environment</div>
+            </div>
+          </div>
+          <div
+            class="col-sm-4 mb-4 d-flex align-items-start justify-content-center"
+          >
+            <div
+              class="arrow-head-rec-info px-3 d-flex justify-content-center align-items-center bg-white shadow rounded-pill"
+            >
+              <img src="./images/arrow.svg" class="arrow-head me-2" />
+              <div class="rec-info">Science and Environment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="employer-employee-container">
+        <div class="employer-container">For Employers</div>
+        <div class="employee-container">For Employees</div>
+      </div>
+
+      <div class="find-or-hire-container gn-padding">
+        Find or Hire Employees your way Ondemand
+      </div>
+      <div class="develop-trust-info-container">
+        Develop Trusted relationship and build your own virtual bend for quick
+        project <br />
+        turnaround or big transformation.
+      </div>
+      <div
+        class="d-sm-flex justify-content-between post-job-main-container gn-padding"
+      >
+        <div class="post-job-container position-relative overflow-hidden">
+          <div class="post-job-first-container">
+            Post A job and Hire Local Professional
+          </div>
+          <div class="project-catalog">Project catalog</div>
+          <div class="post-job-button-container rounded-circle">
+            <div class="circle-arrow bg-white">
+              <img src="./images/post-arrow.svg" class="next-img" />
+            </div>
+          </div>
+          <img
+            src="./images/circle.svg"
+            class="post-job-art position-absolute translate-middle"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="post-job-container position-relative overflow-hidden">
+          <div class="post-job-first-container">
+            Post A job and Hire Local Professional
+          </div>
+          <div class="project-catalog">Talent Scout</div>
+          <div class="post-job-button-container rounded-circle">
+            <div class="circle-arrow bg-white">
+              <img src="./images/post-arrow.svg" class="next-img" />
+            </div>
+          </div>
+          <img
+            src="./images/circle.svg"
+            class="post-job-art position-absolute translate-middle"
+          />
+        </div>
+        <div class="post-job-container position-relative overflow-hidden">
+          <div class="post-job-first-container">
+            Post A job and Hire Local Professional
+          </div>
+          <div class="project-catalog">Talent Marketplace</div>
+          <div class="post-job-button-container rounded-circle">
+            <div class="circle-arrow bg-white">
+              <img src="./images/post-arrow.svg" class="next-img" />
+            </div>
+          </div>
+          <img
+            src="./images/circle.svg"
+            class="post-job-art position-absolute translate-middle"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="mid-body-head-first-content">WHY CHOOSE US</div>
+      <div class="mid-body-head-sec-content mb-5">
+        Find or Hire Local Service Providers your way Onedemand
+      </div>
+      <div
+        class="d-sm-flex why-choose-us-main-container position-relative gn-padding"
+      >
+        <div class="why-choose-us-first-container position-relative1">
+          <img
+            src="./images/blob.png"
+            class="why-choose-us-blob-img img-fluid position-absolute"
+          />
+          <img
+            src="./images/why_choose_us_img.png"
+            alt=""
+            class="why-choose-us-img-1 img-fluid translate-middle-x1"
+          />
+          <div
+            class="why-choose-us-content-container bg-white shadow p-2 position-absolute"
+          >
+            <div class="d-flex p-2 why-choose-us-icon">
+              <img src="./images/wcu_person_1.png" alt="" class="icon-person" />
+              <img src="./images/wcu_person_2.png" alt="" class="icon-person" />
+              <img src="./images/wcu_person_3.png" alt="" class="icon-person" />
+            </div>
+            <div class="why-choose-us-content-child-container p-2">
+              Over 128,000+ users belive that timelygig <br />is the fasttest
+              place to find a job
+            </div>
+          </div>
+        </div>
+
+        <div class="why-choose-us-sec-container gn-padding">
+          <div class="why-choose-us-sec-icon-text-container d-flex shadow p-4">
+            <div class="d-flex circle-container">
+              <img
+                src="./images/wcu_icon-1.svg"
+                alt=""
+                class="wgu-icon-1 justify-content-center align-items-center"
+              />
+            </div>
+
+            <div class="why-choose-us-sec-text-main-container">
+              <div class="fs-6 fw-bold heading-text">Heading text here</div>
+              <div class="">
+                Lorem Ipsum is simply dummy text of the<br />
+                printing and typesetting industry.
+              </div>
+            </div>
+          </div>
+          <div class="why-choose-us-sec-icon-text-container d-flex shadow p-4">
+            <div class="d-flex circle-container">
+              <img
+                src="./images/wcu_icon_2.svg"
+                alt=""
+                class="wgu-icon-2 justify-content-center align-items-center"
+              />
+            </div>
+
+            <div class="why-choose-us-sec-text-main-container">
+              <div class="fs-6 fw-bold heading-text">Heading text here</div>
+              <div class="">
+                Lorem Ipsum is simply dummy text of the<br />
+                printing and typesetting industry.
+              </div>
+            </div>
+          </div>
+          <div class="why-choose-us-sec-icon-text-container d-flex shadow p-4">
+            <div class="d-flex circle-container">
+              <img
+                src="./images/wcu_icon_3.svg"
+                alt=""
+                class="wgu-icon-3 justify-content-center align-items-center"
+              />
+            </div>
+
+            <div class="why-choose-us-sec-text-main-container">
+              <div class="fs-6 fw-bold heading-text">Heading text here</div>
+              <div class="">
+                Lorem Ipsum is simply dummy text of the<br />
+                printing and typesetting industry.
+              </div>
+            </div>
+          </div>
+          <div class="why-choose-us-sec-icon-text-container d-flex shadow p-4">
+            <div class="d-flex circle-container">
+              <img
+                src="./images/wcu_icon_4.svg"
+                alt=""
+                class="wgu-icon-4 justify-content-center align-items-center"
+              />
+            </div>
+
+            <div class="why-choose-us-sec-text-main-container">
+              <div class="fs-6 fw-bold heading-text">Heading text here</div>
+              <div class="">
+                Lorem Ipsum is simply dummy text of the<br />
+                printing and typesetting industry.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="your-team-parent-container gn-padding d-sm-flex mb-5 justify-content-between gap-5"
+      >
+        <div
+          class="your-team-main-container rounded shadow p-4 pe-5 text-white position-relative"
+        >
+          <div>
+            <div class="h3 fw-lighter">
+              We Work as <br />
+              an extension of
+            </div>
+            <div class="h1">Your Team</div>
+            <div class="fw-lighter">
+              Develop Trusted relationship and build your <br />
+              own virtual bend for quick project <br />
+              turnaround or big transformation.
+            </div>
+          </div>
+          <div
+            class="your-team-next-icon-container d-flex justify-content-center align-items-center position-absolute bg-white p-2 rounded-circle start-100 top-50 translate-middle shadow"
+          >
+            <img
+              src="./images/next.png"
+              class="your-team-next-icon img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="your-team-seacond-container">
+          <div class="your-team-points-list d-grid gap-3">
+            <div class="bg-white shadow rounded p-4">
+              <img src="./images/wcu_icon-1.svg" class="img-fluid" alt="" />
+              <div>Heading text here</div>
+            </div>
+
+            <div class="bg-white shadow rounded p-4">
+              <img src="./images/wcu_icon-1.svg" class="img-fluid" alt="" />
+              <div>Heading text here</div>
+            </div>
+
+            <div class="bg-white shadow rounded p-4">
+              <img src="./images/wcu_icon-1.svg" class="img-fluid" alt="" />
+              <div>Heading text here</div>
+            </div>
+
+            <div class="bg-white shadow rounded p-4">
+              <img src="./images/wcu_icon-1.svg" class="img-fluid" alt="" />
+              <div>Heading text here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="how-we-work-1-container gn-padding mb-5 text-center position-relative"
+      >
+        <div class="how-we-work-1-heading text-center mb-3 text-primary">
+          How we Work
+        </div>
+        <div class="how-we-work-1-subheading text-center h3 mb-5">
+          Lorem Ipsum is simply dummy text
+        </div>
+        <div
+          class="how-we-work-1-down-arrow border text-center rounded-circle d-inline-block p-2 position-absolute"
+        >
+          <img src="./images/post-arrow.svg" alt="" />
+        </div>
+        <div
+          class="how-we-work-1-circle-container d-sm-flex justify-content-around"
+        >
+          <div
+            class="how-we-work-1-circle-item d-flex flex-column align-items-center"
+          >
+            <div
+              class="how-we-work-1-circle shadow rounded-circle d-flex justify-content-center align-items-center h3 text-white"
+            >
+              01
+            </div>
+            <div class="fw-bold mb-3">View Your Requirements</div>
+            <div
+              class="how-we-work-1-item-description small text-muted text-center"
+            >
+              Lorem Ipsum is simply dummy text of the printing and type setting
+              simply dummy industry.
+            </div>
+          </div>
+          <div
+            class="how-we-work-1-circle-item d-flex flex-column align-items-center mt-sm-5"
+          >
+            <div
+              class="how-we-work-1-circle shadow rounded-circle d-flex justify-content-center align-items-center h3 text-white"
+            >
+              02
+            </div>
+            <div class="fw-bold mb-3">Search Jobs for Candidates</div>
+            <div
+              class="how-we-work-1-item-description small text-muted text-center"
+            >
+              Lorem Ipsum is simply dummy text of the printing and type setting
+              simply dummy industry.
+            </div>
+          </div>
+          <div
+            class="how-we-work-1-circle-item d-flex flex-column align-items-center"
+          >
+            <div
+              class="how-we-work-1-circle shadow rounded-circle d-flex justify-content-center align-items-center h3 text-white"
+            >
+              03
+            </div>
+            <div class="fw-bold mb-3">Provide to you</div>
+            <div
+              class="how-we-work-1-item-description small text-muted text-center"
+            >
+              Lorem Ipsum is simply dummy text of the printing and type setting
+              simply dummy industry.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="key-features-container text-center gn-padding mb-5 justify-content-center"
+      >
+        <div class="key-feature-heading text-primary mb-3">Key Features</div>
+        <div class="key-feature-subheading h3 mb-5">
+          Lorem Ipsum is simply dummy text
+        </div>
+
+        <div
+          class="key-feature-main d-sm-flex align-items-center position-relative"
+        >
+          <img
+            src="./images/circle1.svg"
+            alt=""
+            class="circle-one position-absolute"
+          />
+          <img
+            src="./images/circle2.svg"
+            alt=""
+            class="circle-two position-absolute end-0"
+          />
+          <img
+            src="./images/circle3.svg"
+            alt=""
+            class="circle-three position-absolute end-0"
+          />
+          <div
+            class="key-feature-img d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="./images/key-features.svg"
+              class="position-absolute1"
+              alt=""
+            />
+          </div>
+          <div
+            class="key-feature-main-text-container bg-white p-5 shadow-lg d-flex flex-column"
+          >
+            <div class="key-feature-main-text-heading h2 text-start mb-5">
+              Perfect both for Employers or Employees.
+            </div>
+            <div
+              class="key-feature-list-container flex-fill d-flex flex-column justify-content-between"
+            >
+              <div
+                class="key-feature-list-item d-flex gap-3 align-items-center"
+              >
+                <div class="key-feature-list-icon p-3">
+                  <img src="./images/star.svg" alt="" />
+                </div>
+                <div>
+                  <div class="key-feature-list-name text-start h5">
+                    Profile highlighter
+                  </div>
+                  <div
+                    class="key-feature-list-description text-start text-muted small"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and type
+                    setting simply dummy industry.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="key-feature-list-item d-flex gap-3 align-items-center"
+              >
+                <div class="key-feature-list-icon p-3">
+                  <img src="./images/bag.svg" alt="" />
+                </div>
+                <div>
+                  <div class="key-feature-list-name text-start h5">
+                    Careern Booster
+                  </div>
+                  <div
+                    class="key-feature-list-description text-start text-muted small"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and type
+                    setting simply dummy industry.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="key-feature-list-item d-flex gap-3 align-items-center"
+              >
+                <div class="key-feature-list-icon p-3">
+                  <img src="./images/profile.svg" alt="" />
+                </div>
+                <div>
+                  <div class="key-feature-list-name text-start h5">
+                    Featured profile
+                  </div>
+                  <div
+                    class="key-feature-list-description text-start text-muted small"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and type
+                    setting simply dummy industry.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how-we-work-parent-container mb-4 gn-padding">
+        <div class="how-we-work-first-child-container">How we work</div>
+        <div class="how-we-work-sec-child-container mb-5">
+          Lorem Ipsum is simply dummy text
+        </div>
+        <div class="d-sm-flex justify-content-between how-we-work-slider px-2">
+          <div class="shadow p-4 rounded mb-3 position-relative">
+            <img
+              src="./images/quote_icon.svg"
+              alt=""
+              class="quote-icon position-absolute"
+            />
+            <div class="how-we-work-first-sub-child-container mb-2">
+              Lorem Ipsum is simply dummy text of the printing<br />
+              and typesetting industry. Lorem Ipsum has been the <br />
+              industry's standard dummy text.
+            </div>
+            <div class="jhone-due-div h6">Jhone Due</div>
+            <div class="ceo-of-apple">CEO of Apple</div>
+          </div>
+          <div class="d-flex1 shadow p-4 rounded mb-4 position-relative">
+            <img
+              src="./images/quote_icon.svg"
+              alt=""
+              class="quote-icon position-absolute"
+            />
+            <div class="how-we-work-first-sub-child-container mb-2">
+              Lorem Ipsum is simply dummy text of the printing<br />
+              and typesetting industry. Lorem Ipsum has been the <br />
+              industry's standard dummy text.
+            </div>
+            <div class="h6">Leena Roi</div>
+            <div class="ceo-of-apple">Manager of Twitter</div>
+          </div>
+          <div class="d-flex1 shadow p-4 rounded mb-3 position-relative">
+            <img
+              src="./images/quote_icon.svg"
+              alt=""
+              class="quote-icon position-absolute"
+            />
+            <div class="how-we-work-first-sub-child-container mb-2">
+              Lorem Ipsum is simply dummy text of the printing<br />
+              and typesetting industry. Lorem Ipsum has been the <br />
+              industry's standard dummy text.
+            </div>
+            <div class="jhone-due-div h6">Jhone Due</div>
+            <div class="ceo-of-apple">CEO of Apple</div>
+          </div>
+          <div class="d-flex1 shadow p-4 rounded mb-4 position-relative">
+            <img
+              src="./images/quote_icon.svg"
+              alt=""
+              class="quote-icon position-absolute"
+            />
+            <div class="how-we-work-first-sub-child-container mb-2">
+              Lorem Ipsum is simply dummy text of the printing<br />
+              and typesetting industry. Lorem Ipsum has been the <br />
+              industry's standard dummy text.
+            </div>
+            <div class="h6">Leena Roi</div>
+            <div class="ceo-of-apple">Manager of Twitter</div>
+          </div>
+        </div>
+      </div>
+      <div class="indicator-div-container d-flex gap-2 mb-5">
+        <div class="indicator-one rounded-pill"></div>
+        <div class="indicator-two rounded-pill"></div>
+        <div class="indicator-one rounded-pill"></div>
+        <div class="indicator-one rounded-pill"></div>
+      </div>
+
+      <footer class="footer-main">
+        <div class="d-sm-flex gn-padding gap-5 justify-content-between">
+          <div class="footer-logo-container me-5">
+            <img
+              src="./images/key-features.svg"
+              class="footer-logo img-fluid mb-3"
+              alt=""
+            />
+            <div class="footer-social-icons d-flex gap-3">
+              <div
+                class="footer-social-icon-item rounded-circle d-flex justify-content-center align-items-center border border-white"
+              >
+                <img src="./images/fb.svg" alt="" />
+              </div>
+              <div
+                class="footer-social-icon-item rounded-circle d-flex justify-content-center align-items-center border border-white"
+              >
+                <img src="./images/twitter.svg" alt="" />
+              </div>
+              <div
+                class="footer-social-icon-item rounded-circle d-flex justify-content-center align-items-center border border-white"
+              >
+                <img src="./images/linkedin.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="footer-menu text-white">
+            <div class="footer-menu-heading h5">Menu</div>
+            <ul class="footer-link-list list-inline d-grid gap-3">
+              <li class="footer-link-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-decoration-none text-white small fw-lighter"
+                  rel="noopener noreferrer"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="footer-link-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-decoration-none text-white small fw-lighter"
+                  rel="noopener noreferrer"
+                >
+                  About us
+                </a>
+              </li>
+              <li class="footer-link-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-decoration-none text-white small fw-lighter"
+                  rel="noopener noreferrer"
+                >
+                  Search Jobs
+                </a>
+              </li>
+              <li class="footer-link-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-decoration-none text-white small fw-lighter"
+                  rel="noopener noreferrer"
+                >
+                  Contact us
+                </a>
+              </li>
+              <li class="footer-link-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-decoration-none text-white small fw-lighter"
+                  rel="noopener noreferrer"
+                  >Search Candidates
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-download-section">
+            <div class="footer-download-heading mb-3 text-white h5">
+              Download Mobile App
+            </div>
+            <div class="d-flex gap-3">
+              <div
+                class="footer-download-item small border d-flex bg-white text-white p-2 px-3 gap-4 align-items-center"
+                style="--bs-bg-opacity: 0.1"
+              >
+                <img src="./images/appstore.svg" alt="" />
+                App Store
+              </div>
+              <div
+                class="footer-download-item small border d-flex bg-white text-white p-2 px-3 gap-4 align-items-center"
+                style="--bs-bg-opacity: 0.1"
+              >
+                <img src="./images/playstore.svg" alt="" />
+                Play Store
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="m-0 border-white" />
+        <div
+          class="gn-padding text-white d-sm-flex justify-content-between pb-4 pt-2"
+        >
+          <div class="footer-copyright small opacity-50">
+            Copyright 2022 Timely Gig, All Rights Reserved.
+          </div>
+          <div>
+            <a
+              href="#"
+              class="text-decoration-none text-white opacity-50 small me-4"
+              >Terms of Use</a
+            >
+            <a href="#" class="text-decoration-none text-white opacity-50 small"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(() => {
+        $(".how-we-work-slider").slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dot: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          nav: false,
+          responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: false,
+                centerMode: true,
+                infinite: true,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
